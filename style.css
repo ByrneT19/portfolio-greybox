@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+
+nav {
+    background-color: darkgray;
+    text-align: center;
+    max-height: 80px;
+    height: 10%;
+    font-size: 20px;
+}
+
+.h {
+    min-height: 50px;
+    max-height: 500px;
+    width: 100%;
+    background-color: black;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+.b {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.p {
+    text-align: center;
+    font-size: 25px;    
+}
+
+section:nth-child(even) {
+    background-color: darkgray;
+    width: 100%;
+    max-height: 60px;
+}
+
+section {
+    text-align: center;
+    font-size: 20px;
+}
+
+.han {
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    transform: rotate(-5deg)
+               skew(-20deg);
+               z-index: 1;
+               opacity: 0.3;
+               position: absolute;
+               right: 10px;
+               font-size: 50px;
+               color: red;
+}
+
+@media only screen and (min-width: 1200px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    nav {
+        font-size: 40px;
+    }
+
+    .h {
+        font-size: 200px;
+    }
+
+    .b {
+        font-size: 40px;
+    }
+
+    .p {
+        font-size: 50px;
+    }
+
+    .han {
+        font-size: 120px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    nav {
+        font-size: 20px;
+    }
+
+    .h {
+        font-size: 150px;
+    }
+
+    .b {
+        font-size: 30px;
+    }
+
+    .p {
+        font-size: 35;
+    }
+
+    .han {
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width:899px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    nav {
+        font-size: 20px;
+    }
+
+    .h {
+        font-size: 40px;
+    }
+
+    .b {
+        font-size: 30px;
+    }
+
+    .p {
+        font-size: 35;
+    }
+
+    .han {
+        font-size: 80px;
+    }
+}
+
+
+
+
